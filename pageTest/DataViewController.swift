@@ -16,6 +16,7 @@ class DataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        usleep(100000)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,6 +30,9 @@ class DataViewController: UIViewController {
         self.dataLabel!.text = dataObject
     }
 
-
+    override var description: String
+    {
+        return dataObject;
+    }
 }
 
